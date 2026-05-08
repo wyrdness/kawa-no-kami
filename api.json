@@ -1,8 +1,8 @@
 {
   "meta": {
-    "version": "1.0.0",
+    "version": "1.1.0",
     "schema_version": "1.0.0",
-    "last_updated": "2026-02-13",
+    "last_updated": "2026-05-07",
     "repository": "https://github.com/wyrdness/kawa-no-kami",
     "maintainers": [
       {
@@ -16,111 +16,232 @@
       "content": "CC-BY-4.0"
     }
   },
+
   "phenomenon": {
     "id": "kawa-no-kami",
-    "name": "Kawa-no-Kami - The River Deity",
-    "aliases": [],
+    "name": "Kawa-no-Kami",
+    "aliases": [
+      { "name": "河の神", "language": "Japanese", "meaning": "river god" },
+      { "name": "川之神", "language": "Japanese", "meaning": "river god (alternate writing)" },
+      { "name": "Kahaku", "language": "Japanese", "meaning": "river earl / river lord (河伯), borrowed from Chinese Hebo" },
+      { "name": "Suijin", "language": "Japanese", "meaning": "water deity (broader category encompassing river kami)", "region": "Japan" }
+    ],
     "category": "ENTITY_SPIRIT",
-    "subcategory": "Unknown",
+    "subcategory": "Shinto kami / water deity",
     "tags": [
+      "shinto",
+      "japan",
+      "water-deity",
+      "river",
+      "kami",
       "folklore",
       "mythology"
     ],
     "status": "documented",
     "description": {
-      "summary": "This phenomenon has been documented extensively across multiple time periods and continues to generate interest from researchers, folklorists, and investigators.",
-      "full": "This phenomenon has been documented extensively across multiple time periods and continues to generate interest from researchers, folklorists, and investigators. The evidence includes eyewitness accounts, cultural traditions, and in some cases physical documentation."
+      "summary": "Kawa-no-Kami is the generic Shinto designation for a river deity in Japanese mythology — the spirit or god (kami) of a river, sometimes treated as a single 'king of the river gods' and at other times as a class of localized spirits resident in specific rivers.",
+      "full": "Kawa-no-Kami (河の神 / 川之神, lit. 'river god'), also called Kahaku (河伯, a borrowing modeled on the Chinese river deity Hebo), is in Japanese tradition the deity (kami) of a river. In Shinto's animistic framework, every significant river — and many small streams — is understood to have a presiding spirit, and 'Kawa-no-Kami' functions both as a proper-name divinity in early texts and as a generic class shared by countless local water gods. Kawa-no-Kami is a sub-type of suijin (水神, 'water deity'). Early references appear in the Man'yōshū (8th century), where the river kami are invoked as serving the imperial table by providing fish offerings, and in mythological texts such as the Kojiki and Nihon Shoki. Folk practice attached a wide range of behaviors to Kawa-no-Kami: presiding over fish and irrigation, requiring purification rites (misogi) at riverside shrines, accepting offerings (in earlier eras, including reported human sacrifice during severe floods, later replaced — under Buddhist influence — by straw and flower dolls), and overlapping with the figure of the kappa, which is sometimes interpreted as a degraded or yōkai form of the river kami."
     },
     "etymology": {
-      "origin": "Unknown",
-      "meaning": "To be documented",
-      "first_use": "Unknown"
+      "origin": "Japanese: kawa (川 / 河) 'river' + no (の) genitive particle + kami (神) 'god, spirit'. Kahaku (河伯) is a Sino-Japanese borrowing from Chinese 河伯 Hé Bó, the god of the Yellow River.",
+      "meaning": "'God of the river'. Kahaku ≈ 'river earl/lord'.",
+      "first_use": "Earliest textual occurrences in 8th-century Japanese works (Kojiki 712, Nihon Shoki 720, Man'yōshū c. 759)."
     }
   },
+
   "classification": {
     "taxonomy": {
       "category": "ENTITY_SPIRIT",
-      "type": "Unknown",
-      "subtype": "Unknown",
-      "variant": "Unknown"
+      "type": "Kami (Shinto deity)",
+      "subtype": "Suijin (water deity)",
+      "variant": "River-specific"
     },
-    "related_phenomena": []
+    "related_phenomena": [
+      { "id": "suijin", "name": "Suijin", "relationship": "superset", "description": "Wider category of Japanese water deities encompassing river, well, and sea spirits" },
+      { "id": "kappa", "name": "Kappa", "relationship": "related", "description": "River-dwelling yōkai sometimes folkloristically interpreted as a degraded form or attendant of Kawa-no-Kami" },
+      { "id": "hebo", "name": "Hebo (Hé Bó)", "relationship": "counterpart", "description": "Chinese deity of the Yellow River from whom the name Kahaku is adapted" },
+      { "id": "habaek", "name": "Habaek", "relationship": "counterpart", "description": "Korean river deity equivalent" },
+      { "id": "watatsumi", "name": "Watatsumi", "relationship": "related", "description": "Sea-deity counterpart in Japanese mythology" }
+    ]
   },
+
   "characteristics": {
     "physical": {
-      "features": [],
-      "morphology": "See README.md for detailed physical description"
+      "features": [
+        { "feature": "No fixed visual form", "description": "As a kami, Kawa-no-Kami is generally formless or invisible; pictorial representations vary by shrine and era", "frequency": "always" },
+        { "feature": "Anthropomorphic depictions", "description": "When personified in art, Kawa-no-Kami may appear as a robed elder or imperial figure, following the Chinese Hebo iconography", "frequency": "occasional" },
+        { "feature": "Kappa-form depictions", "description": "In folk-religious contexts the kappa (a turtle-like river yōkai) is sometimes treated as a manifestation or degraded form", "frequency": "occasional" }
+      ],
+      "morphology": "Formless in canonical Shinto theology; iconography is later and varies regionally."
     },
-    "abilities": [],
+    "abilities": [
+      { "ability": "Control of river flow and floods", "description": "Believed to govern the river's behavior; floods and droughts are interpreted as expressions of the deity's mood", "frequency": "always", "evidence_level": "folklore" },
+      { "ability": "Gift of fish and irrigation", "description": "Provides fish, drinking water, and irrigation; offerings of the first catch are made in return", "frequency": "common", "evidence_level": "folklore" },
+      { "ability": "Demands ritual purification", "description": "Requires misogi and other purifications at riverside shrines; pollution of the river is a religious offense", "frequency": "common", "evidence_level": "folklore" }
+    ],
     "behavior": {
-      "activity_period": "unknown",
-      "disposition": "unknown",
-      "habitat_preference": []
+      "activity_period": "variable",
+      "disposition": "variable",
+      "social_structure": "variable",
+      "habitat_preference": ["rivers", "stream confluences", "river-mouth shrines", "sacred waterfalls"],
+      "diet": "Receives offerings of rice, sake, fish, and ritual food from worshippers",
+      "patterns": [
+        "Worshipped seasonally at riverside shrines",
+        "Associated with annual festivals tied to the rice-growing calendar",
+        "Historically propitiated during floods and droughts"
+      ]
     }
   },
+
   "distribution": {
     "range": {
-      "description": "Unknown",
-      "continents": [],
-      "countries": [],
-      "regions": []
+      "description": "Throughout the Japanese archipelago wherever rivers are venerated; the figure is part of the broader East Asian river-deity complex (Chinese Hebo, Korean Habaek).",
+      "continents": ["Asia"],
+      "countries": ["Japan"],
+      "regions": ["all of Japan", "rural agricultural regions especially"]
     },
     "hotspots": [],
     "temporal": {
       "first_recorded": {
-        "date": "Unknown",
+        "date": "0700s",
         "circa": true,
-        "source": "Traditional folklore"
-      }
+        "source": "Kojiki (712 CE), Nihon Shoki (720 CE), Man'yōshū (c. 759 CE)"
+      },
+      "peak_activity_periods": [
+        { "period": "Asuka–Nara period (7th–8th c.)", "description": "Earliest written attestations of river deities in Japanese mythological compilations" },
+        { "period": "Edo period (1603–1868)", "description": "Robust folk veneration tied to rice cultivation and riverine commerce" }
+      ],
+      "seasonal_patterns": "Festivals cluster around rice planting and harvest, and around seasonal flood risk."
     }
   },
+
   "history": {
     "origins": {
-      "cultural_roots": "Unknown",
-      "earliest_accounts": "See README.md for historical details",
-      "folklore_connections": "Unknown"
+      "cultural_roots": "Shinto animism, in which rivers, mountains, and other natural features are inhabited by kami; influenced from the early historical period by continental (Chinese) river-deity traditions, especially the cult of Hebo of the Yellow River.",
+      "earliest_accounts": "Kawa-no-Kami appears in the Kojiki and Nihon Shoki (early 8th c.) and the Man'yōshū poetic anthology.",
+      "folklore_connections": "Closely tied to the kappa folklore complex and to the broader suijin (water-deity) cult; cognate with Chinese Hebo and Korean Habaek."
     },
-    "timeline": []
+    "timeline": [
+      { "date": "0712-01-01", "event": "Kojiki compiled, including river deities in genealogies of kami", "significance": "Earliest extant Japanese written reference", "source": "Kojiki (712 CE)" },
+      { "date": "0720-01-01", "event": "Nihon Shoki compiled, expanding the cosmogony and naming further water kami", "significance": "Foundational mytho-historical source", "source": "Nihon Shoki (720 CE)" },
+      { "date": "0759-01-01", "event": "Man'yōshū anthology completed; poems invoke river kami serving the imperial table", "significance": "Embeds Kawa-no-Kami into court poetic culture", "source": "Man'yōshū" },
+      { "date": "1603-01-01", "event": "Edo period begins; folk veneration of river kami flourishes alongside the kappa folk-yōkai complex", "significance": "Robust popular cult", "source": "General Edo-period folk religion scholarship" }
+    ],
+    "modern_era": "Many local river shrines (suijin-sha / kawa-no-kami-sha) continue to operate in Japan, with seasonal rites tied to fishing, agriculture, and flood protection. The figure has entered global pop culture via Hayao Miyazaki's Spirited Away (2001), in which a polluted 'river god' — interpreted by scholars as a Kawa-no-Kami — is bathed clean of human refuse, a sequence widely read as environmental commentary."
   },
+
   "sightings": {
     "statistics": {
       "total_documented": 0,
       "verified": 0,
       "disputed": 0,
-      "debunked": 0
+      "debunked": 0,
+      "date_range": { "earliest": "n/a", "latest": "n/a" }
     },
     "notable": [],
     "database_path": "./sightings/"
   },
+
   "evidence": {
     "physical": [],
     "photographic": [],
     "video": [],
     "audio": [],
-    "trace": []
+    "trace": [],
+    "documentary": [
+      {
+        "id": "kawa-no-kami-evidence-manyoshu",
+        "type": "anthology",
+        "name": "Man'yōshū",
+        "date": "759",
+        "description": "Earliest Japanese poetic anthology; includes references to river kami serving the imperial table.",
+        "status": "verified",
+        "source": "Man'yōshū (c. 759 CE)"
+      },
+      {
+        "id": "kawa-no-kami-evidence-kojiki",
+        "type": "chronicle",
+        "name": "Kojiki",
+        "date": "712",
+        "description": "Earliest extant Japanese chronicle, naming a range of water and river kami within the kami genealogies.",
+        "status": "verified",
+        "source": "Kojiki (712 CE)"
+      }
+    ]
   },
+
   "theories": {
-    "paranormal": [],
+    "paranormal": [
+      {
+        "name": "Animist Shinto theology",
+        "description": "Each river has a kami expressing the agency of its waters; veneration sustains a reciprocal relationship between river and community.",
+        "proponents": ["Traditional Shinto theology"],
+        "evidence_cited": ["Kojiki and Nihon Shoki", "Continuous shrine and matsuri practice"]
+      }
+    ],
     "scientific": [],
-    "skeptical": []
+    "skeptical": [
+      {
+        "name": "Naturalistic / hydrological reading",
+        "description": "Phenomena attributed to Kawa-no-Kami (floods, droughts, fish runs) are explained by hydrology, climate, and ecology; the deity is a culturally meaningful but non-empirical figure.",
+        "proponents": ["Mainstream secular folklore studies"],
+        "evidence_cited": ["Modern hydrological understanding of riverine systems"]
+      }
+    ]
   },
+
   "cultural": {
     "folklore": {
-      "traditions": [],
-      "stories": [],
-      "beliefs": "See README.md for cultural context"
+      "traditions": [
+        "Shinto suijin worship",
+        "Riverside misogi purification rites",
+        "Kappa folk traditions (linked variant)"
+      ],
+      "stories": [
+        "Folk tales in which travelers must offer rice or sake to safely cross or fish a river",
+        "Accounts in which neglect of a river shrine triggers floods",
+        "Buddhist-era replacement of human-sacrifice tales with straw / flower dolls cast into rivers"
+      ],
+      "beliefs": "Rivers are alive and personal; gratitude, purification, and offerings maintain their goodwill. Pollution is a religious as well as ecological offense."
     },
     "popular_culture": {
-      "literature": [],
-      "film_tv": [],
-      "games": [],
-      "other": []
+      "literature": [
+        "Lafcadio Hearn — essays on Japanese water deities (late 19th c.)",
+        "Foster, M. D. — The Book of Yokai (2015)"
+      ],
+      "film_tv": [
+        "Spirited Away (Studio Ghibli, 2001) — the polluted 'river god' / 'haku' sequence"
+      ],
+      "games": [
+        "Ōkami (2006) — water kami appear as characters",
+        "Various JRPGs invoking Shinto water deities"
+      ],
+      "other": [
+        "Annual matsuri at suijin and Kawa-no-Kami shrines across Japan"
+      ]
     }
   },
+
   "research": {
-    "researchers": [],
-    "organizations": [],
-    "ongoing_studies": "None documented"
+    "researchers": [
+      { "name": "Lafcadio Hearn", "affiliation": "Writer and educator (Japan)", "contribution": "Influential 19th–early-20th-century English-language essays on Japanese folk religion including water deities", "period": "1890–1904" },
+      { "name": "Yanagita Kunio", "affiliation": "Founder of Japanese folklore studies", "contribution": "Documented regional water-kami and kappa traditions", "period": "1910s–1962" },
+      { "name": "Michael Dylan Foster", "affiliation": "University of California, Davis", "contribution": "English-language scholarship on yōkai and Japanese folklore including water spirits", "period": "2000s–present" }
+    ],
+    "organizations": [
+      { "name": "Jinja Honchō (Association of Shinto Shrines)", "url": "https://www.jinjahoncho.or.jp/en/", "focus": "Umbrella body for Shinto shrines including those dedicated to suijin and Kawa-no-Kami" },
+      { "name": "International Research Center for Japanese Studies (Nichibunken)", "url": "https://www.nichibun.ac.jp/en/", "focus": "Academic study of Japanese religion and folklore" }
+    ],
+    "ongoing_studies": "Folklorists, religious-studies scholars, and environmental humanities researchers continue to document local Kawa-no-Kami / suijin shrines and traditions across Japan."
   },
-  "sources": []
+
+  "sources": [
+    { "id": "wikipedia-kawa-no-kami", "type": "website", "title": "Kawa-no-Kami", "publication": "Wikipedia", "url": "https://en.wikipedia.org/wiki/Kawa-no-Kami", "accessed": "2026-05-07" },
+    { "id": "wikipedia-suijin", "type": "website", "title": "Suijin", "publication": "Wikipedia", "url": "https://en.wikipedia.org/wiki/Suijin", "accessed": "2026-05-07" },
+    { "id": "foster-2015", "type": "book", "title": "The Book of Yokai: Mysterious Creatures of Japanese Folklore", "authors": ["Michael Dylan Foster"], "publication": "University of California Press", "date": "2015", "isbn": "978-0520271029" },
+    { "id": "hearn-1894", "type": "book", "title": "Glimpses of Unfamiliar Japan", "authors": ["Lafcadio Hearn"], "publication": "Houghton Mifflin", "date": "1894" },
+    { "id": "kojiki-712", "type": "book", "title": "Kojiki (古事記)", "authors": ["Ō no Yasumaro (compiler)"], "date": "712" },
+    { "id": "nihon-shoki-720", "type": "book", "title": "Nihon Shoki (日本書紀)", "date": "720" },
+    { "id": "manyoshu-759", "type": "book", "title": "Man'yōshū (万葉集)", "date": "c. 759" }
+  ]
 }
